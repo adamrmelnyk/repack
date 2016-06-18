@@ -22,11 +22,13 @@ Or install it yourself as:
 
 require the gem where needed and call the package method from the Repack module which takes the base price, number of works and the product category
 
-```
+```ruby
 Repack.package(<base price>, <number of workers>, <category>)
+```
 
 ### Sample Usage
-```
+
+```ruby
 require 'repack'
 
 Repack.package(1299.99, 3, "food")
