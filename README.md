@@ -1,8 +1,6 @@
 # Repack
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/repack`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gem for calculating markup on repacking various products and product types
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require the gem where needed and call the package method from the Repack module which takes the base price, number of works and the product category
+
+```
+Repack.package(<base price>, <number of workers>, <category>)
+
+### Sample Usage
+```
+require 'repack'
+
+Repack.package(1299.99, 3, "food")
+```
 
 ## Development
 
@@ -38,4 +46,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
